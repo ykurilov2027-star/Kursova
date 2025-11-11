@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}EduTransform - Природничі науки{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/">🔬 EduTransform</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Головна</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Предмети ▼</a>
+                    <div class="dropdown-content">
+                        <a href="/biology/main">Біологія</a>
+                        <a href="/chemistry/main">Хімія</a>
+                        <a href="/physics/main">Фізика</a>
+                        <a href="/geography/main">Географія</a>
+                    </div>
+                </li>
+                <li><a href="/tools" class="nav-link">Інтерактивні інструменти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header-content">
+            <h1>{% block header_title %}EduTransform{% endblock %}</h1>
+            <p class="header-subtitle">{% block header_subtitle %}Природничі науки у цифровому світі{% endblock %}</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Курілов Євгеній | Освітній проєкт "EduTransform"</p>
+            <p class="footer-sources">Джерела: PhET, LabXchange, ZNO.Освіта.UA, Teaching-Me, Optima, JustSmart</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+
+{% block title %}Біологія - Основні матеріали - EduTransform{% endblock %}
+
+{% block header_title %}Біологія{% endblock %}
+{% block header_subtitle %}Основні матеріали та теорія{% endblock %}
+
+{% block content %}
+<div class="subject-nav">
+    <a href="/biology/main" class="nav-tab active">Основні матеріали</a>
+    <a href="/biology/extra" class="nav-tab">Додаткові ресурси</a>
+    <a href="/biology/nmt" class="nav-tab">НМТ Підготовка</a>
+</div>
+
+<section class="subject-content">
+    <div class="content-block">
+        <h2>📚 Теоретичні конспекти</h2>
+        <div class="theory-grid">
+            <div class="theory-card">
+                <h3>Основні поняття клітини</h3>
+                <p>Структура клітини, органели та їх функції. Різниця між прокаріотичними та еукаріотичними клітинами.</p>
+                <ul>
+                    <li>Клітинна мембрана</li>
+                    <li>Ядро та генетичний матеріал</li>
+                    <li>Основні органели</li>
+                    <li>Клітинне дихання</li>
+                </ul>
+            </div>
+
+            <div class="theory-card">
+                <h3>Молекулярна біологія</h3>
+                <p>Білки, вуглеводи, ліпіди та нуклеїнові кислоти. Їх структура та біологічна роль.</p>
+                <ul>
+                    <li>Структура ДНК і РНК</li>
+                    <li>Синтез білків</li>
+                    <li>Генетичний код</li>
+                    <li>Мутації та репарація ДНК</li>
+                </ul>
+            </div>
+
+            <div class="theory-card">
+                <h3>Обмін речовин</h3>
+                <p>Основні процеси метаболізму: фотосинтез, дихання, брикування.</p>
+                <ul>
+                    <li>Фотосинтез та його етапи</li>
+                    <li>Клітинне дихання</li>
+                    <li>Ферменти і реакції</li>
+                    <li>Енергетичні системи</li>
+                </ul>
+            </div>
+
+            <div class="theory-card">
+                <h3>Генетика</h3>
+                <p>Закони спадковості, хромосоми, гени та алелі. Прикладні генетичні поняття.</p>
+                <ul>
+                    <li>Законів Менделя</li>
+                    <li>Сцеплення генів</li>
+                    <li>Мутагенез</li>
+                    <li>Популяційна генетика</li>
+                </ul>
+            </div>
+
+            <div class="theory-card">
+                <h3>Анатомія людини</h3>
+                <p>Системи органів людського тіла та їх функції.</p>
+                <ul>
+                    <li>Нервова система</li>
+                    <li>Гормональна система</li>
+                    <li>Кровообіг та серцево-судинна система</li>
+                    <li>Пищеварювання та травлення</li>
+                </ul>
+            </div>
+
+            <div class="theory-card">
+                <h3>Екологія</h3>
+                <p>Взаємодія організмів з середовищем та між собою. Екосистеми та біосфера.</p>
+                <ul>
+                    <li>Популяції та скупчення</li>
+                    <li>Харчові ланцюги та мережі</li>
+                    <li>Екосистеми</li>
+                    <li>Біосфера</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-block">
+        <h2>🔬 Інтерактивні симуляції</h2>
+        <p>Експериментуйте з наступними симуляціями від PhET і інших платформ:</p>
+        
+        <div class="simulation-list">
+            <div class="simulation-item">
+                <h4>Клітинні процеси</h4>
+                <p>Взаємодія клітин, мітоз та мейоз</p>
+                <a href="https://phet.colorado.edu/en/simulations/category/biology.html" target="_blank" class="btn btn-primary">Відкрити симуляцію</a>
+            </div>
+
+            <div class="simulation-item">
+                <h4>ДНК та спадковість</h4>
+                <p>Візуалізація структури ДНК та передачі генів</p>
+                <a href="https://phet.colorado.edu/en/simulations/category/biology.html" target="_blank" class="btn btn-primary">Відкрити симуляцію</a>
+            </div>
+
+            <div class="simulation-item">
+                <h4>Фотосинтез</h4>
+                <p>Процес перетворення сонячної енергії в органічні речовини</p>
+                <a href="https://phet.colorado.edu/en/simulations/category/biology.html" target="_blank" class="btn btn-primary">Відкрити симуляцію</a>
+            </div>
+
+            <div class="simulation-item">
+                <h4>Дихання клітин</h4>
+                <p>Как клітини виробляють енергію</p>
+                <a href="https://phet.colorado.edu/en/simulations/category/biology.html" target="_blank" class="btn btn-primary">Відкрити симуляцію</a>
+            </div>
+
+            <div class="simulation-item">
+                <h4>Нервова система</h4>
+                <p>Синапси, нейротрансмітери та мозок</p>
+                <a href="https://phet.colorado.edu/en/simulations/category/biology.html" target="_blank" class="btn btn-primary">Відкрити симуляцію</a>
+            </div>
+
+            <div class="simulation-item">
+                <h4>Системи організму</h4>
+                <p>Взаємодія органів та систем людського організму</p>
+                <a href="https://phet.colorado.edu/en/simulations/category/biology.html" target="_blank" class="btn btn-primary">Відкрити симуляцію</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-block">
+        <h2>🎬 Відео-ресурси та експерименти</h2>
+        <p>Навчальні відео та демонстрації біологічних процесів:</p>
+        
+        <div class="resource-list">
+            <div class="resource-item">
+                <h4>Клітинна біологія - базові концепції</h4>
+                <p>Відеолекція з основних концепцій клітинної біології</p>
+                <a href="https://www.youtube.com/@crashcourse" target="_blank" class="btn btn-secondary">Дивитись на YouTube</a>
+            </div>
+
+            <div class="resource-item">
+                <h4>Мітоз та мейоз</h4>
+                <p>Прямий рахунок того, як клітини діляться</p>
+                <a href="https://www.youtube.com/@crash" target="_blank" class="btn btn-secondary">Дивитись на YouTube</a>
+            </div>
+
+            <div class="resource-item">
+                <h4>ДНК та спадковість</h4>
+                <p>Як працює генетичний код</p>
+                <a href="https://www.youtube.com/results?search_query=DNA+and+genetics" target="_blank" class="btn btn-secondary">Дивитись на YouTube</a>
+            </div>
+
+            <div class="resource-item">
+                <h4>Екосистеми та харчові ланцюги</h4>
+                <p>Як взаємодіють організми в природі</p>
+                <a href="https://www.youtube.com/results?search_query=ecosystems+and+food+chains" target="_blank" class="btn btn-secondary">Дивитись на YouTube</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-block">
+        <h2>🔗 Рекомендовані ресурси</h2>
+        <ul class="resource-links">
+            <li><a href="https://phet.colorado.edu/en/simulations/category/biology.html" target="_blank">PhET Biology Simulations</a></li>
+            <li><a href="https://www.khanacademy.org/science/biology" target="_blank">Khan Academy Biology</a></li>
+            <li><a href="https://about.labxchange.org/featured/virtual-lab-simulations" target="_blank">LabXchange Virtual Labs</a></li>
+            <li><a href="https://teaching-me.org/" target="_blank">Teaching-Me Platform</a></li>
+        </ul>
+    </div>
+</section>
+{% endblock %}
